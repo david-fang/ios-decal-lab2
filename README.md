@@ -22,7 +22,7 @@ Once you have opened the project in Xcode, notice the files present in the Navig
 We have provided the following files for you to use. 
 
 1. `Drumkit.swift` in the `Model` folder - this file contains the "brains" of our app, including the filenames for the audio files that we'll be using, as well as a method for playing these audio files.
-2.`DrummerViewController.swift` in the `Controller` folder - this file contains the ViewController class that will connect our View created in Interface Builder to our Model. You will be adding code to this file in this lab.
+2. `DrummerViewController.swift` in the `Controller` folder - this file contains the ViewController class that will connect our View created in Interface Builder to our Model. You will be adding code to this file in this lab.
 3. `Main.storyboard` in the `View` folder - this is where you will be creating your UI elements (buttons, labels, etc) and AutoLayout Constraints. This file is automatically created for you each time you start a new Xcode project.
 4. `Assets.xcassets` in the `View` folder - contains all of the images used in the app (we have only included app icon images, but if you'd like to add your own images to customize the app, add them here). This is another file that is automatically created for you each time you create a new Xcode project.
 5. `Supporting Files` - contains all the audio clips we'll be using, as well as some other files we won't be using in today's lab (Ask a lab assistant if you want to learn about them!)
@@ -87,16 +87,19 @@ Now we can start connecting the UI elements we created in our Storyboard to our 
 
 **Open the Assistant Editor so that `Main.storyboard` and `DrummerViewController.swift` are both open.** "DrummerViewController" is the custom controller class associated with the view in `Main.storyboard`. Usually, you will have to set each of your ViewController's custom classes in the Identity Inspector in Interface Builder on your own, but we have done this step for you.
 
-Since we wan't our drum pad buttons to play an audio clip when pressed, we'll want to create an *action* in our ViewController for each button.
+Since we wan't our drum pad buttons to play an audio clip when pressed, we'll want to create an *action* in our ViewController that will be called each time the user taps a button.
 
-To do this, **highlight all 7 buttons in your Storyboard, then Control + Drag from them into `DrummerViewController.swift`. The Connection should be an *Action*, the sender type should be set to *UIButton*, and the function name should be set to "drumButtonWasPressed"** (see image below).
+To do this, **highlight one of the buttons in your Storyboard, then Control + Drag from them into `DrummerViewController.swift`. The Connection should be an *Action*, the sender type should be set to *UIButton*, and the function name should be set to "drumButtonWasPressed"** (see image below).
 
 ![alt text](/README-images/part4-2.png)
 
-To check that all your buttons were successfully connected to the IBAction, hover over the small circle next to "drumButtonWasPressed" in DrummerViewController.swift. All 7 buttons should appear highlighted in your Storyboard. If they aren't all highlighted, **click the small icon next to your IBAction "drumButtonWasPressed", and drag from it to each unhighlighted button to connect them** (see image below).
+Since we want all of our buttons to activate this method (not just this one button we control + dragged from), **click the small icon next to your IBAction "drumButtonWasPressed", and drag from it to each of the other buttons to connect them** (see image below).
 
-![alt text](/README-images/part4-3.png)
+![alt text](/README-images/corrected.png)
 
+To check that all your buttons were successfully connected to the IBAction, hover over the small circle next to "drumButtonWasPressed" in DrummerViewController.swift. All 7 buttons should appear highlighted in your Storyboard.
+
+![alt text](/README-images/part4-4.png)
 
 ### b. Adding Sound to our App ###
 
@@ -130,13 +133,18 @@ If you implemented the method correctly, tapping on the Segmented Control in you
 
 ## Grading ##
 
-You have the option to either be checked off by a TA or instructor during lab to receive your grade immediately, or submit your files to [Gradescope](https://gradescope.com/courses/5482/assignments/18748/) to be graded later.
+Once you have finished, please submit your files to [Gradescope](https://gradescope.com/courses/5482) You will need to submit files EVEN if you are being checked off, since Gradescope does not support submission-less grading at the moment. You will need to submit a zip folder of all of your project files (compress and submit the folder you cloned from GitHub).
 
-If you are submitting via Gradescope, you will need to submit a zip folder of all of your project files (compress and submit the folder you cloned from GitHub).
+If you've finished during lab and need to get checked off, please fill out one of the following forms (based off what lab you are in): 
 
-We will grade your work based off the following criteria (all requirements must be satisfied to receive credit)
+- [310 Soda Lab Lab Check-Off Form](https://goo.gl/forms/fouhU4haCXUINsw92)
+
+- [220 Jacobs Lab Lab Check-Off Form](https://goo.gl/forms/jBqxptCZXex1QAGs1)
+
+We will grade your work based off the following criteria (all requirements must be satisfied to receive credit).
 
 1. All buttons and UI elements must dynamically change as shown in the preview gif for any device size and orientation (use the image in part 3 as a guide for how your app should look).
 2. Tapping on a drum button must play a sound (your app needs to work!)
 
 If both requirements are satisfied, congratulations on finishing Lab 2!  :) 
+
