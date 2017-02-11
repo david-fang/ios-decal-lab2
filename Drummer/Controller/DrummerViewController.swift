@@ -9,23 +9,32 @@
 import UIKit
 
 class DrummerViewController: UIViewController {
-
-    // Drum Kit 0 (Acoustic Drum Kit)
     let drumKit0 = DrumKit(drumKitID: 0)
-    
-    // Drum Kit 1 (Electronic Drum Kit)
     let drumKit1 = DrumKit(drumKitID: 1)
     
-    // The currently selected drum kit (default = 0)
     var currentDrumKit: DrumKit?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // sets the default drum kit to drumkit0
-        currentDrumKit = drumKit0
+        self.currentDrumKit = drumKit0
     }
     
-    // YOUR CODE HERE
+    // MARK: - User Interactive Handlers
 
+    @IBAction func drumButtonWasPressed(_ sender: UIButton) {
+        currentDrumKit?.playDrumSound(forDrumWithTag: sender.tag)
+    }
+    
+    @IBAction func drumKitWasChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            self.currentDrumKit = drumKit0
+        case 1:
+            self.currentDrumKit = drumKit1
+        default:
+            print("ERROR: Segment index not found")
+        }
+    }
+    
 
 }

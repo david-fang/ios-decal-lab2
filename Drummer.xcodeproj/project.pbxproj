@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		070902021E4ABEA000AF4AB1 /* Lecture2Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070902011E4ABEA000AF4AB1 /* Lecture2Notes.swift */; };
+		073C42471E4D634E0082C6E9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C42461E4D634E0082C6E9 /* RoundButton.swift */; };
 		6CAB23901E29AF7100BA9DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAB238F1E29AF7100BA9DD3 /* AppDelegate.swift */; };
 		6CAB23951E29AF7100BA9DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CAB23931E29AF7100BA9DD3 /* Main.storyboard */; };
 		6CAB23971E29AF7100BA9DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CAB23961E29AF7100BA9DD3 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		070902011E4ABEA000AF4AB1 /* Lecture2Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lecture2Notes.swift; sourceTree = "<group>"; };
+		073C42461E4D634E0082C6E9 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		6CAB238C1E29AF7100BA9DD3 /* Drummer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drummer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAB238F1E29AF7100BA9DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CAB23941E29AF7100BA9DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				6CAB23961E29AF7100BA9DD3 /* Assets.xcassets */,
 				6CAB23931E29AF7100BA9DD3 /* Main.storyboard */,
+				073C42461E4D634E0082C6E9 /* RoundButton.swift */,
 				070902011E4ABEA000AF4AB1 /* Lecture2Notes.swift */,
 			);
 			name = View;
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CAB23C81E29B09000BA9DD3 /* DrumKit.swift in Sources */,
+				073C42471E4D634E0082C6E9 /* RoundButton.swift in Sources */,
 				070902021E4ABEA000AF4AB1 /* Lecture2Notes.swift in Sources */,
 				6CAB23901E29AF7100BA9DD3 /* AppDelegate.swift in Sources */,
 				6CAB23CA1E29B0B500BA9DD3 /* DrummerViewController.swift in Sources */,
